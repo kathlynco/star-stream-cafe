@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Your custom CSS -->
+    <link rel="stylesheet" href="swiper.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="order.html">Order</a>
+            <a href="report.html">Report</a>
+        </div>
+    </header>
+
+    <!--  Only one carousel -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <img src="uploads/starmenu.png" alt="Image 1">
+            </div>
+            <div class="swiper-slide">
+            <img src="uploads/squidmeu.png" alt="Image 2">
+            </div>
+            <div class="swiper-slide">
+            <img src="uploads/starmenu.png" alt="Image 3">
+            </div>
+        </div>
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    </div>
+
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+   <script>
+        new Swiper(".mySwiper", {
+    slidesPerView: 3,       // show center + partial sides
+    centeredSlides: true,     // keep active slide centered
+    loop: true,
+    spaceBetween: 10,         // gap between slides
+    speed: 700,
+    grabCursor: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }
+    });
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

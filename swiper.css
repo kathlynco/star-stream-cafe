@@ -1,0 +1,56 @@
+body {
+  background-color: #010b36;
+}
+
+.navbar {
+  background-color: #1f2a5c;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* Swiper container */
+.mySwiper {
+  width: 100%;
+  height: 350px;   /* ✅ give enough height for images */
+}
+
+/* Base slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  opacity: 0.6;
+}
+
+/* Images */
+.swiper-slide img {
+  width: 280px;       /* base size */
+  height: auto;
+  border-radius: 16px;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/* Active slide emphasis */
+.swiper-slide-active img {
+  transform: scale(2); /* ✅ enlarge smoothly without cropping */
+  opacity: 1;
+}
+
+/* Side slides (peek effect) */
+.swiper-slide-next img,
+.swiper-slide-prev img {
+  transform: scale(0.95);
+  opacity: 0.8;
+}

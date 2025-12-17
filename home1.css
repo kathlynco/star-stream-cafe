@@ -1,0 +1,63 @@
+body {
+  background-color: #010b36;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #1f2a5c;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+/* Carousel container */
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: flex;
+  justify-content: center;
+}
+
+/* Track */
+.carousel-track {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Individual slides */
+.slide {
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.slide img {
+  width: 280px;
+  border-radius: 16px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Center focus effect */
+.slide:target img,
+.slide:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+/* Side slides peek */
+.slide img {
+  opacity: 0.6;
+}

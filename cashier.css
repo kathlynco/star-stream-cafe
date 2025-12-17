@@ -1,0 +1,145 @@
+ body {
+      background-color: #010b36;
+      background-image: url('uploads/purpbg.gif')
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #270865;
+      padding: 1rem;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1.5rem;
+      font-weight: bold;
+    }
+    .navbar a:hover {
+      color: #ffcc00;
+    }
+
+    /* Carousel */
+    #peekCarousel {
+      max-width: 1000px;
+      margin: 0 auto 50px auto;
+      height: 300px;
+      overflow: visible;
+      perspective: 1000px;
+    }
+    #peekCarousel .carousel-inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #peekCarousel .carousel-item {
+      display: block !important;
+      flex: 0 0 180px;
+      margin: 0 10px;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      transform: scale(0.85) rotateY(15deg);
+      z-index: 1;
+      position: relative;
+    }
+    #peekCarousel .carousel-item.active img {
+      transform: scale(1.15) rotateY(0deg);
+      opacity: 1;
+      z-index: 3;
+    }
+    #peekCarousel .carousel-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, opacity 0.3s ease, z-index 0.3s;
+    }
+
+    /* Login box */
+    .login-box {
+      width: 300px;
+      background-color: #131f56 !important;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      margin-left: auto;
+      color: white;
+    }
+    .login-box .form-control {
+      background-color: #0d1a40 !important;
+      color: white;
+      border: 1px solid #ffcc00;
+      margin-bottom: 0.5rem;
+    }
+    .login-box .btn {
+      background-color: #ffcc00 !important;
+      color: #131f56 !important;
+      font-weight: bold;
+      border: none;
+    }
+
+    /* Checkout / Orders Section */
+    .checkout-section {
+      margin-top: 50px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      color: aliceblue;
+    }
+    .checkout-section h4 {
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+    .customer-card {
+      background-color: #131f56;
+      color: aliceblue;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .customer-card button {
+      background-color: #ffcc00;
+      color: #131f56;
+      border: none;
+      font-weight: bold;
+    }
+
+    /* Order modal */
+    .order-modal {
+      background-color: #0d1a40;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 10px;
+    }
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.5rem;
+    }
+
+        /* Main content grows to fill space */
+    main.flex-fill {
+    flex: 1 0 auto; /* flex-grow: 1, flex-shrink: 0, auto basis */
+    }
+
+    /* Footer styling */
+    .footer {
+    background-color: #270865;
+
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+    flex-shrink: 0; /* prevents footer from shrinking */
+    }
+
+    .footer .footer-link {
+    color: #ffcc00;
+    text-decoration: none;
+    }
+
+    .footer .footer-link:hover {
+    text-decoration: underline;
+    }
